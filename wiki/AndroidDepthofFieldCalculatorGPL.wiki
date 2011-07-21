@@ -7,3 +7,5 @@ This project is an open source, and free software, implementation of a depth of 
  * It's free software - there aren't many of those about
  * It's designed from a usability perspective
  * It's mine. :)
+
+I haven't actually uploaded the code as yet. This is my first Google Code project and I'm just getting a handle on the facilities and features available.
