@@ -1,4 +1,4 @@
-= Status =
+= Coming soon =
 
 As of this writing the software hasn't been uploaded, either here in source form, or to the Android marketplace. I'm still getting up to speed with how these Google facilities work.
 
