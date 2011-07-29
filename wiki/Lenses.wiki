@@ -1,0 +1,17 @@
+= Lenses =
+
+My initial plan was to create an entry in the internal list of all lenses on the market. However, once I saw the number I was dealing with (hundreds!) I realised the list would be too long for the user to practically find and select one from.
+
+Plan B, then, was to create a small set of theoretical lenses which between them cover the focal length and aperture ranges of all the lenses a user might be using. I used this page:
+
+http://www.the-digital-picture.com/Reviews/
+
+as my information source.
+
+= Adding More Lens Definitions =
+
+To add more lenses, or to reset the list to just the exact lenses you use, edit _res/xml/lenses_. The format of the data file should be self explanatory. Remember to set one of them to _default="true"_, and if you get crashes on startup ensure all your lenses have starting focal lengths and apertures inside the defined range.
+
+= Gaps =
+
+If there are gaps in my list which mean a physical lens can't be represented with the default set of definitions, raise an issue giving details. I'll add it to the build.
