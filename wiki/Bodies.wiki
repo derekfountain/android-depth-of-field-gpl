@@ -1,0 +1,11 @@
+= Bodies =
+
+There are far too many bodies out there to make a list of them all practical. Apart from the issue of a definitive source of information and keeping it up to date within the application, such a list would be so long it would be impractical for the user to try to select one from it.
+
+So I created a cut down list of what might be termed _body groups_. I'll add new entries to the groups as appropriate, but this means people have to let me know if their body isn't covered! Raise an issue and I'll get a new body into the next build.
+
+= Circle of Confusion =
+
+The only piece of information relevant to the application about a body is the circle of confusion value. It should be somewhere buried in the manufacturer's specifications for the camera or the sensor it uses.
+
+If you know that value you can create your own body in the data file _res/xml/bodies_. The format should be self explanatory.
