@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lenses>
+
+	<!-- I tried to create a set of sensible and usable lens definitions
+	     which cover all the lenses reviewed here:
+	       http://www.the-digital-picture.com/Reviews/
+	     Details here:
+	       http://code.google.com/p/android-depth-of-field-gpl/wiki/Lenses
+	     If there are gaps, let me know:
+	       http://code.google.com/p/android-depth-of-field-gpl/issues/
+	     and I'll add them. -->
+
+	<lens include="true">
+		<name>8mm - 24mm f/2.8</name>
+		<minlength>8</minlength>
+		<maxlength>24</maxlength>
+		<startinglength>13</startinglength>
+		<minaperture>280</minaperture>
+		<maxaperture>2200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>15mm - 40mm f/3.5</name>
+		<minlength>15</minlength>
+		<maxlength>40</maxlength>
+		<startinglength>20</startinglength>
+		<minaperture>350</minaperture>
+		<maxaperture>2200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true" default="true">
+		<name>20mm - 100mm f/1.2</name>
+		<minlength>20</minlength>
+		<maxlength>100</maxlength>
+		<startinglength>30</startinglength>
+		<minaperture>120</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>20mm - 135mm f/2.0</name>
+		<minlength>20</minlength>
+		<maxlength>135</maxlength>
+		<startinglength>30</startinglength>
+		<minaperture>200</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>28mm - 300mm f/2.8</name>
+		<minlength>28</minlength>
+		<maxlength>300</maxlength>
+		<startinglength>50</startinglength>
+		<minaperture>280</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>70mm - 200mm f/2.8 L</name>
+		<minlength>70</minlength>
+		<maxlength>200</maxlength>
+		<startinglength>100</startinglength>
+		<minaperture>280</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>70mm - 300mm f/1.8 L</name>
+		<minlength>70</minlength>
+		<maxlength>300</maxlength>
+		<startinglength>100</startinglength>
+		<minaperture>180</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>80mm - 400mm f/2.8 L</name>
+		<minlength>80</minlength>
+		<maxlength>400</maxlength>
+		<startinglength>200</startinglength>
+		<minaperture>280</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>400mm - 800mm f/4 L</name>
+		<minlength>400</minlength>
+		<maxlength>800</maxlength>
+		<startinglength>500</startinglength>
+		<minaperture>400</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="true">
+		<name>800mm - 1200mm f/4 L</name>
+		<minlength>800</minlength>
+		<maxlength>1200</maxlength>
+		<startinglength>900</startinglength>
+		<minaperture>400</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<!-- Because I'm the author, I get to add the specific lenses I use most of the time :) -->
+
+	<lens include="false">
+		<name>Canon 17-40mm L</name>
+		<minlength>17</minlength>
+		<maxlength>40</maxlength>
+		<startinglength>20</startinglength>
+		<minaperture>400</minaperture>
+		<maxaperture>2200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="false">
+		<name>Canon 70-200mm f/4 L</name>
+		<minlength>70</minlength>
+		<maxlength>200</maxlength>
+		<startinglength>100</startinglength>
+		<minaperture>400</minaperture>
+		<maxaperture>3200</maxaperture>
+		<startingaperture>1100</startingaperture>
+	</lens>
+
+	<lens include="false">
+		<name>Canon 50mm f/1.8</name>
+		<minlength>50</minlength>
+		<maxlength>50</maxlength>
+		<startinglength>50</startinglength>
+		<minaperture>180</minaperture>
+		<maxaperture>2200</maxaperture>
+		<startingaperture>400</startingaperture>
+	</lens>
+	
+</lenses>

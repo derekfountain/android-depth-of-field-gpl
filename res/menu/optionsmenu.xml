@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:title="@string/menu_new" android:id="@+id/menu_new_item"></item>
+  <item android:title="@string/menu_delete" android:id="@+id/menu_delete"></item>
+  <item android:title="@string/menu_settings" android:id="@+id/menu_settings">
+    <menu>
+      <item android:title="@string/distance_units" android:id="@+id/menu_units" />
+    </menu>
+  </item>
+  <item android:title="@string/menu_about" android:id="@+id/menu_about"></item>
+</menu>
