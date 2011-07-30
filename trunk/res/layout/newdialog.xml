@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tab name:"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+id/NewTabName" android:layout_width="fill_parent" android:singleLine="true"></EditText>
+    
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Body:"></TextView>
+    <Spinner android:layout_height="wrap_content" android:id="@+id/BodySpinner" android:layout_width="fill_parent"></Spinner>
+    
+    <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lens:"></TextView>
+    <Spinner android:layout_height="wrap_content" android:id="@+id/LensSpinner" android:layout_width="fill_parent"></Spinner>
+
+    <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Range:"></TextView>
+    <Spinner android:layout_height="wrap_content" android:id="@+id/RangeSpinner" android:layout_width="fill_parent"></Spinner>
+
+</LinearLayout>

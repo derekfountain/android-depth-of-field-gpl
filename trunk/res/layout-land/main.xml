@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_height="fill_parent" android:layout_width="fill_parent">
+  
+<LinearLayout android:id="@+id/LinearLayout01" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:textStyle="bold" android:id="@+id/title"></TextView>
+
+<org.derekfountain.dofc.v.DrawingSurface android:id="@+id/DrawingSurface"
+                                       android:layout_width="fill_parent"
+                                       android:layout_height="wrap_content" />
+
+
+<TableLayout android:visibility="gone" android:id="@+id/TextTable" android:layout_height="wrap_content" android:paddingLeft="12dip" android:paddingBottom="15dip" android:stretchColumns="1" android:layout_width="wrap_content">
+
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/NearLimitLabel" android:text="Near Limit"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/NearLimitValue" android:text="0" android:paddingLeft="15dip" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/FarLimitLabel" android:text="Far Limit"></TextView>
+<TextView android:layout_height="wrap_content" android:text="0" android:paddingLeft="15dip" android:id="@+id/FarLimitValue" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TotalLabel" android:text="Total"></TextView>
+<TextView android:layout_height="wrap_content" android:text="0" android:paddingLeft="15dip" android:id="@+id/TotalValue" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><View android:id="@+id/View02" android:layout_height="2dip" android:layout_width="fill_parent" android:background="?android:attr/listDivider"></View>
+<View android:id="@+id/View03" android:layout_height="2dip" android:background="?android:attr/listDivider" android:layout_width="wrap_content"></View>
+</TableRow><TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/InFrontLabel" android:text="In front of subject"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/InFrontValue" android:text="0" android:paddingLeft="15dip" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BehindSubjectLabel" android:text="Behind subject"></TextView>
+<TextView android:layout_height="wrap_content" android:text="0" android:paddingLeft="15dip" android:id="@+id/BehindSubjectValue" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><View android:id="@+id/View02" android:layout_height="2dip" android:layout_width="fill_parent" android:background="?android:attr/listDivider"></View>
+<View android:id="@+id/View03" android:layout_height="2dip" android:background="?android:attr/listDivider" android:layout_width="wrap_content"></View>
+</TableRow>
+<TableRow android:id="@+id/TableRow06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/HyperFocalDistanceLabel" android:text="Hyperfocal distance"></TextView>
+<TextView android:layout_height="wrap_content" android:text="0" android:paddingLeft="15dip" android:id="@+id/HyperfocalDistanceValue" android:layout_width="wrap_content"></TextView>
+</TableRow>
+<TableRow android:id="@+id/TableRow07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CircleOfConfusionLabel" android:text="Circle of confusion"></TextView>
+<TextView android:layout_height="wrap_content" android:text="0" android:paddingLeft="15dip" android:id="@+id/CircleOfConfusionValue" android:layout_width="wrap_content"></TextView>
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
+
+
+<LinearLayout android:id="@+id/LinearLayout02" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1">
+
+
+<TableLayout android:id="@+id/TableLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/FocalLengthLabel" android:text="Focal Length" android:textStyle="bold"></TextView>
+
+<TableRow android:id="@+id/TableRow11" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingLeft="12dip">
+<TextView android:layout_width="wrap_content" android:text="0mm" android:layout_height="fill_parent" android:paddingLeft="2dip" android:paddingRight="2dip" android:gravity="center" android:textSize="12.0sp" android:id="@+id/MinFocalLengthLabel"></TextView>
+
+<org.derekfountain.dofc.v.Slider android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/FocalLength" android:layout_weight="1" />
+
+<!--  <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/FocalLength" android:layout_weight="1"></SeekBar> -->
+<TextView android:layout_width="wrap_content" android:text="0mm" android:layout_height="fill_parent" android:paddingLeft="2dip" android:paddingRight="2dip" android:gravity="center" android:textSize="12.0sp" android:id="@+id/MaxFocalLengthLabel"></TextView>
+</TableRow>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ApertureLabel" android:text="Aperture" android:textStyle="bold"></TextView>
+
+<TableRow android:id="@+id/TableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="12dip">
+<TextView android:layout_width="wrap_content" android:text="f/min" android:layout_height="fill_parent" android:gravity="center" android:paddingLeft="2dip" android:paddingRight="2dip" android:textSize="12.0sp" android:id="@+id/MinApertureLabel"></TextView>
+
+<org.derekfountain.dofc.v.ApertureSlider android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Aperture" android:layout_weight="1" />
+
+<!-- <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Aperture" android:layout_weight="1"></SeekBar> -->
+<TextView android:layout_width="wrap_content" android:text="f/max" android:layout_height="fill_parent" android:gravity="center" android:paddingLeft="2dip" android:paddingRight="2dip" android:textSize="12.0sp" android:id="@+id/MaxApertureLabel"></TextView>
+</TableRow>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subject distance" android:id="@+id/SubjectDistanceLabel" android:textStyle="bold"></TextView><TableRow android:id="@+id/TableRow12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="12dip"><TextView android:layout_width="wrap_content" android:text="0" android:paddingLeft="2dip" android:paddingRight="2dip" android:layout_height="fill_parent" android:gravity="center" android:textSize="12.0sp" android:id="@+id/MinDistanceLabel"></TextView>
+
+<org.derekfountain.dofc.v.Slider android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Distance" android:layout_weight="1" />
+
+<!-- <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Distance" android:layout_weight="1"></SeekBar> -->
+<TextView android:layout_width="wrap_content" android:text="0" android:paddingLeft="2dip" android:paddingRight="2dip" android:layout_height="fill_parent" android:gravity="center" android:textSize="12.0sp" android:id="@+id/MaxDistanceLabel"></TextView></TableRow>
+</TableLayout>
+
+</LinearLayout>
+
+  
+</LinearLayout>

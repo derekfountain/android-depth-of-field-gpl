@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ranges>
+
+	<!-- I added the ranges I find useful. Author's perogative! More details:
+	       http://code.google.com/p/android-depth-of-field-gpl/wiki/Ranges
+	     If there are reasons to have more in the default build - and I fully
+	     accept there might be - let me know:
+	       http://code.google.com/p/android-depth-of-field-gpl/issues/
+	     and I'll add them. -->
+
+	<range include="true">
+		<name>Close range (1-10m)</name>
+		<mindistance>1</mindistance>
+		<maxdistance>10</maxdistance>
+		<startingdistance>3</startingdistance>
+	</range>
+
+	<range include="true" default="true">
+		<name>Medium distance (5-50m)</name>
+		<mindistance>5</mindistance>
+		<maxdistance>50</maxdistance>
+		<startingdistance>20</startingdistance>
+	</range>
+
+	<range include="true">
+		<name>Far distance (50-500m)</name>
+		<mindistance>50</mindistance>
+		<maxdistance>500</maxdistance>
+		<startingdistance>75</startingdistance>
+	</range>
+
+</ranges>

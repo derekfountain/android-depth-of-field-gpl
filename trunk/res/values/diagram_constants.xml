@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- These are pixel values, suitable for the normal 160dpi display. At use-time they're scaled. -->
+<integer name="view_padding">10</integer>
+<integer name="field_height">24</integer>
+<integer name="v_line_height">24</integer>
+<integer name="v_line_spacing">10</integer>
+<integer name="subject_size">3</integer>
+<integer name="arrow_spacing">3</integer>
+<integer name="width_arrow_head">8</integer>
+<integer name="height_arrow_head">3</integer>
+
+</resources>

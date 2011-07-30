@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bodies>
+
+	<!-- It seems there are quite a lot of camera bodies out there. :)
+	     It didn't seem practical to try to cover them all. Details here:
+	       http://code.google.com/p/android-depth-of-field-gpl/wiki/Bodies
+	     If there are important ones missing, let me know:
+	       http://code.google.com/p/android-depth-of-field-gpl/issues/
+	     and I'll add them. -->
+
+	<body include="true" default="true">
+		<name>Canon 30D, 20D, 10D</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 60D, 50D, 40D</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon Digital Rebel (any)</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 1000D, 500D</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 300/400 series</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 1D (any)</name>
+		<circleofconfusion>0.023</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 1Ds (any)</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 5D (any)</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Canon 7D</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Contax N Digital</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Epson RD-1, RD-1S</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Fujifilm S series</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Fujifilm IS Pro</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Fujifilm X100</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Konica Minolta Maxxum (any)</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Leica Digilux 3</name>
+		<circleofconfusion>0.015</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Leica M8 (any)</name>
+		<circleofconfusion>0.023</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Leica M9</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Leica X1</name>
+		<circleofconfusion>0.023</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Mamiya ZD</name>
+		<circleofconfusion>0.039</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Nikon D100,D200/D300</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Nikon D1-D2</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Nikon D40-D90</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Nikon D3, D700</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Nikon D3000-D7000</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Olympus E (all)</name>
+		<circleofconfusion>0.015</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Panasonic DMC (all)</name>
+		<circleofconfusion>0.015</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Pentax 645D</name>
+		<circleofconfusion>0.050</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Pentax K (all)</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Pentax *ist D</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Samsung (all)</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sigma DP (all)</name>
+		<circleofconfusion>0.018</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sigma SD1</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sigma SD (all)</name>
+		<circleofconfusion>0.018</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sony A900, A850</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sony A (all others)</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Sony NEX</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>APS film</name>
+		<circleofconfusion>0.025</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>35mm film</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>6x4.5 film</name>
+		<circleofconfusion>0.045</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>6x6 film</name>
+		<circleofconfusion>0.045</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>6x7 film</name>
+		<circleofconfusion>0.060</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>6x9 film</name>
+		<circleofconfusion>0.070</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>4x5 film</name>
+		<circleofconfusion>0.100</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>5x7 film</name>
+		<circleofconfusion>0.150</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>8x10 film</name>
+		<circleofconfusion>0.200</circleofconfusion>
+	</body>
+
+	<body include="true">
+		<name>Four Thirds System (nominal)</name>
+		<circleofconfusion>0.015</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>APS-C Canon (nominal)</name>
+		<circleofconfusion>0.018</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>APS-C Nikon/Pentax/Sony (nominal)</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>APS-H Canon (nominal)</name>
+		<circleofconfusion>0.023</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>35mm (nominal)</name>
+		<circleofconfusion>0.029</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 645 (6×4.5) (nominal)</name>
+		<circleofconfusion>0.047</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 6×6 (nominal)</name>
+		<circleofconfusion>0.053</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 6×7 (nominal)</name>
+		<circleofconfusion>0.059</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 6×9 (nominal)</name>
+		<circleofconfusion>0.067</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 6×12 (nominal)</name>
+		<circleofconfusion>0.083</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Medium Format 6×17 (nominal)</name>
+		<circleofconfusion>0.12</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Large Format 4×5 (nominal)</name>
+		<circleofconfusion>0.11</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Large Format 5×7 (nominal)</name>
+		<circleofconfusion>0.15</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>Large Format 8×10 (nominal)</name>
+		<circleofconfusion>0.22</circleofconfusion>
+	</body>
+
+	<body include="true">
+		<name>CoC - 0.001mm</name>
+		<circleofconfusion>0.001</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.002mm</name>
+		<circleofconfusion>0.002</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.003mm</name>
+		<circleofconfusion>0.003</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.004mm</name>
+		<circleofconfusion>0.004</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.005mm</name>
+		<circleofconfusion>0.005</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.006mm</name>
+		<circleofconfusion>0.006</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.007mm</name>
+		<circleofconfusion>0.007</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.008mm</name>
+		<circleofconfusion>0.008</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.009mm</name>
+		<circleofconfusion>0.009</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.010mm</name>
+		<circleofconfusion>0.010</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.011mm</name>
+		<circleofconfusion>0.011</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.012mm</name>
+		<circleofconfusion>0.012</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.013mm</name>
+		<circleofconfusion>0.013</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.014mm</name>
+		<circleofconfusion>0.014</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.015mm</name>
+		<circleofconfusion>0.015</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.016mm</name>
+		<circleofconfusion>0.016</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.017mm</name>
+		<circleofconfusion>0.017</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.018mm</name>
+		<circleofconfusion>0.018</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.019mm</name>
+		<circleofconfusion>0.019</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.020mm</name>
+		<circleofconfusion>0.020</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.021mm</name>
+		<circleofconfusion>0.021</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.022mm</name>
+		<circleofconfusion>0.022</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.023mm</name>
+		<circleofconfusion>0.023</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.024mm</name>
+		<circleofconfusion>0.024</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.025mm</name>
+		<circleofconfusion>0.025</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.026mm</name>
+		<circleofconfusion>0.026</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.027mm</name>
+		<circleofconfusion>0.027</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.028mm</name>
+		<circleofconfusion>0.028</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.029mm</name>
+		<circleofconfusion>0.029</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.030mm</name>
+		<circleofconfusion>0.030</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.031mm</name>
+		<circleofconfusion>0.031</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.032mm</name>
+		<circleofconfusion>0.032</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.033mm</name>
+		<circleofconfusion>0.033</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.034mm</name>
+		<circleofconfusion>0.034</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.035mm</name>
+		<circleofconfusion>0.035</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.036mm</name>
+		<circleofconfusion>0.036</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.037mm</name>
+		<circleofconfusion>0.037</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.038mm</name>
+		<circleofconfusion>0.038</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.039mm</name>
+		<circleofconfusion>0.039</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.040mm</name>
+		<circleofconfusion>0.040</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.045mm</name>
+		<circleofconfusion>0.045</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.050mm</name>
+		<circleofconfusion>0.050</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.055mm</name>
+		<circleofconfusion>0.055</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.060mm</name>
+		<circleofconfusion>0.060</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.065mm</name>
+		<circleofconfusion>0.065</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.070mm</name>
+		<circleofconfusion>0.070</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.075mm</name>
+		<circleofconfusion>0.075</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.080mm</name>
+		<circleofconfusion>0.080</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.085mm</name>
+		<circleofconfusion>0.085</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.090mm</name>
+		<circleofconfusion>0.090</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.095mm</name>
+		<circleofconfusion>0.095</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.100mm</name>
+		<circleofconfusion>0.100</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.105mm</name>
+		<circleofconfusion>0.105</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.110mm</name>
+		<circleofconfusion>0.110</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.115mm</name>
+		<circleofconfusion>0.115</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.120mm</name>
+		<circleofconfusion>0.120</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.125mm</name>
+		<circleofconfusion>0.125</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.130mm</name>
+		<circleofconfusion>0.130</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.135mm</name>
+		<circleofconfusion>0.135</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.140mm</name>
+		<circleofconfusion>0.140</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.145mm</name>
+		<circleofconfusion>0.145</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.150mm</name>
+		<circleofconfusion>0.150</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.175mm</name>
+		<circleofconfusion>0.175</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.200mm</name>
+		<circleofconfusion>0.200</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.225mm</name>
+		<circleofconfusion>0.225</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.250mm</name>
+		<circleofconfusion>0.250</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.275mm</name>
+		<circleofconfusion>0.275</circleofconfusion>
+	</body>
+	<body include="true">
+		<name>CoC - 0.300mm</name>
+		<circleofconfusion>0.300</circleofconfusion>
+	</body>
+
+</bodies>
