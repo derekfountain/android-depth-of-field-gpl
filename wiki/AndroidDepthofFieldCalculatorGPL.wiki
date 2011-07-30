@@ -17,5 +17,3 @@ http://www.derekfountain.org/images/dofc1.png
 http://www.derekfountain.org/images/dofc4.png
 
 There are more screenshots [http://www.derekfountain.org/software_dofc.php here].
-
-I haven't actually uploaded the code as yet. This is my first Google Code project and I'm just getting a handle on the facilities and features available.
