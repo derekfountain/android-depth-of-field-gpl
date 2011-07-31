@@ -1,0 +1,9 @@
+= How to build the project =
+
+This guide is brief. You're expected to know how to use Eclipse and its [http://developer.android.com/sdk/installing.html Android development environment], and to have Subversive installed and working.
+
+Create a new Eclipse project:
+
+File -> New -> Other...
+
+then find SVN -> Project from SVN
