@@ -13,7 +13,7 @@ This project is an open source, and free software, implementation of a depth of 
 
 It looks like this:
 
-http://www.derekfountain.org/images/dofc1.png
-http://www.derekfountain.org/images/dofc4.png
+http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc1.png
+http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc4.png
 
 There are more screenshots [http://www.derekfountain.org/software_dofc.php here].
