@@ -16,4 +16,4 @@ It looks like this:
 http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc1.png
 http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc4.png
 
-There are more screenshots [http://www.derekfountain.org/software_dofc.php here].
+There are more screenshots at my personal site [http://www.derekfountain.org/software_dofc.php here] and the status and current build information is [Status here].
