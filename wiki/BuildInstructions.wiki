@@ -43,3 +43,9 @@ Now click:
 and clean the project, then allow it to rebuild.
 
 You should now be able to run the project as an *Android Application* and it'll launch in a new emulator (or on your phone, if suitably connected).
+
+= Setting Default Equipment =
+
+The bodies, lenses and ranges the software uses are defined in data files. Since you've gone to the trouble of building it, you might as well tune these files for your equipment (and provide me feedback if you decide anything I might find useful).
+
+See the [Bodies bodies] page, the [Lenses lenses] page and [Ranges ranges] page for details.
