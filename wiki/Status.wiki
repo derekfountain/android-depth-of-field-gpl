@@ -1,5 +1,5 @@
-= Coming soon =
+= v0.9beta Released =
 
-As of this writing the software hasn't been uploaded, either here in source form, or to the Android marketplace. I'm still getting up to speed with how these Google facilities work.
+The project is in beta, and isn't currently in the Android Marketplace. I'd like to iron any bugs out before it goes there, and perhaps get some feedback on my choice of [Bodies bodies], [Lenses lenses] and [Ranges ranges].
 
-The software will appear here real soon - first beta source due 31st July 2010.
+Instructions to pull the source into Eclipse and build it for your phone are [BuildInstructions here].
