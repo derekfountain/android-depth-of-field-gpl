@@ -12,12 +12,12 @@ http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc5.png
 
 The values the application shows reveal a problem. Looking at the diagram, the middle figure at the top shows the depth of field the camera will produce using those settings - 13cm, or about 5 inches. That means that if I focus on the face, there will only be about 6cm in front and behind the face that's in focus. That's not enough - the clothing and flyaway hair will be out of focus. In some portraits that might be the desired effect, but in most candid shots it tends to be distracting.
 
-Looking at the subject, I think maybe 30cm (12 inches) is a more sensible value for this scenario. That will keep in focus the whole person, clothes, hair, bag, and water bottle in crisp focus. But that's all I want, since any more depth of field will start to bring the background into focus and will distract from the subject.
+Looking at the subject, I think maybe 30cm (12 inches) is a more sensible value for this scenario. That will keep in crisp focus the whole person, clothes, hair, bag, and water bottle. But that's all I want, since any more depth of field will start to bring in the background and will distract from the subject.
 
-So I start to slider the DoFC's aperture slider to the right, watching that depth of field value. I'm looking for a value closer to the desired depth of 30cm. I find it at f/6.4:
+So I start to slide the DoFC's aperture slider to the right, watching that depth of field value. I'm looking for a value closer to the desired depth of 30cm. I find it at f/6.4:
 
 http://android-depth-of-field-gpl.googlecode.com/svn/wiki/dofc6.png
 
 So that's the setting to use on the camera.
 
-Of course, you can't use a DoFC for every shot you take, but it's good to stop and check the important ones. After a while experience tells you what will work. The photo above wasn't checked at the time, and I shot it at f/5.6 which felt about right and gave a DoFC of 26cm - close enough to result in the image I was after.
+Of course, you can't use a DoFC for every shot you take, but it's good to stop and check the important ones. After a while experience tells you what will work. The photo above wasn't checked at the time of shooting, and I chose f/5.6 which felt about right. I later found that that gave a DoFC of 26cm - close enough to result in the image I was after.
