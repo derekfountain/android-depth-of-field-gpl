@@ -487,8 +487,9 @@ public class MVCView {
 
 		// Update the aperture slider so it understands the range it's representing
 		//
-		Slider wAperture = (Slider)mActivity.findViewById(R.id.Aperture);
+		ApertureSlider wAperture = (ApertureSlider)mActivity.findViewById(R.id.Aperture);
 		wAperture.setRangeMinMax( newLens.getMinAperture(), newLens.getMaxAperture() );
+		wAperture.setStops( newLens.getStopRanges() );
 		
 		// UI is ready - tell the controller the new details
 		//
