@@ -2,6 +2,7 @@ package org.derekfountain.dofc.m;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -24,13 +25,14 @@ public class Lens {
 	 */
 	protected static String          mDefaultName = null;
 
-	protected String mName; 
-	protected int    mMinLength;
-	protected int    mMaxLength;
-	protected int    mStartingLength;
-	protected int    mMinAperture;
-	protected int    mMaxAperture;
-	protected int    mStartingAperture;
+	protected String                 mName; 
+	protected int                    mMinLength;
+	protected int                    mMaxLength;
+	protected int                    mStartingLength;
+	protected int                    mMinAperture;
+	protected int                    mMaxAperture;
+	protected int                    mStartingAperture;
+	protected Collection<StopRange>  mStopRanges = null;
 	
 	public String getName() {
 		return mName;
@@ -74,10 +76,28 @@ public class Lens {
 	public void setStartingAperture(int startingAperture) {
 		this.mStartingAperture = startingAperture;
 	}
+	public Collection<StopRange> getStopRanges()
+	{
+		return mStopRanges;
+	}
 	
+	
+	/**
+	 * Constructor sets the default values as given.
+	 * 
+	 * @param name
+	 * @param minLength
+	 * @param maxLength
+	 * @param startingLength
+	 * @param minAperture
+	 * @param maxAperture
+	 * @param startingAperture
+	 * @param stopRanges
+	 */
 	public Lens(String name,
 			    int minLength,   int maxLength,   int startingLength,
-			    int minAperture, int maxAperture, int startingAperture ) {
+			    int minAperture, int maxAperture, int startingAperture,
+			    Collection<StopRange> stopRanges ) {
 		super();
 		this.mName             = name;
 		this.mMinLength        = minLength;
@@ -86,6 +106,7 @@ public class Lens {
 		this.mMinAperture      = minAperture;
 		this.mMaxAperture      = maxAperture;
 		this.mStartingAperture = startingAperture;
+		this.mStopRanges       = stopRanges;
 	}
 	
 	/**
@@ -128,14 +149,15 @@ public class Lens {
 	
 			try {
 				
-				String nameStore           = null;
-				String minLengthStore      = null;
-				String maxLengthStore      = null;
-				String startingLengthStore = null;
-				String minApertureStore    = null;
-				String maxApertureStore    = null;
+				String nameStore                     = null;
+				String minLengthStore                = null;
+				String maxLengthStore                = null;
+				String startingLengthStore           = null;
+				String minApertureStore              = null;
+				String maxApertureStore              = null;
+				ArrayList<StopRange> stopRangesStore = new ArrayList<StopRange>();
 				
-				boolean nextNameIsDefault  = false;
+				boolean nextNameIsDefault            = false;
 
 				
 				int eventType = parser.getEventType();
@@ -174,6 +196,10 @@ public class Lens {
 								nextNameIsDefault = false;
 							}
 						}
+						else if ( tagName.equals("stopsrange") ) {
+							String rangeName = parser.getAttributeValue(null, "name");
+							stopRangesStore.add( StopRange.valueOf( rangeName.toUpperCase() ) );
+						}
 						else if ( tagName.equals("minlength") ) {
 							minLengthStore = parser.nextText();
 						}
@@ -195,8 +221,11 @@ public class Lens {
 													         Integer.parseInt(startingLengthStore),
 													         Integer.parseInt(minApertureStore),
 													         Integer.parseInt(maxApertureStore),
-													         Integer.parseInt( parser.nextText() ) );
+													         Integer.parseInt( parser.nextText() ),
+													         stopRangesStore );
 							mLensCache.add(lens);
+							
+							stopRangesStore = new ArrayList<StopRange>();
 						}
 					}
 					

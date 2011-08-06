@@ -12,6 +12,8 @@
 
 	<lens include="true">
 		<name>8mm - 24mm f/2.8</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>8</minlength>
 		<maxlength>24</maxlength>
 		<startinglength>13</startinglength>
@@ -22,6 +24,8 @@
 
 	<lens include="true">
 		<name>15mm - 40mm f/3.5</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>15</minlength>
 		<maxlength>40</maxlength>
 		<startinglength>20</startinglength>
@@ -32,6 +36,8 @@
 
 	<lens include="true" default="true">
 		<name>20mm - 100mm f/1.2</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>20</minlength>
 		<maxlength>100</maxlength>
 		<startinglength>30</startinglength>
@@ -42,6 +48,8 @@
 
 	<lens include="true">
 		<name>20mm - 135mm f/2.0</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>20</minlength>
 		<maxlength>135</maxlength>
 		<startinglength>30</startinglength>
@@ -52,6 +60,8 @@
 
 	<lens include="true">
 		<name>28mm - 300mm f/2.8</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>28</minlength>
 		<maxlength>300</maxlength>
 		<startinglength>50</startinglength>
@@ -62,6 +72,8 @@
 
 	<lens include="true">
 		<name>70mm - 200mm f/2.8 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>70</minlength>
 		<maxlength>200</maxlength>
 		<startinglength>100</startinglength>
@@ -72,6 +84,8 @@
 
 	<lens include="true">
 		<name>70mm - 300mm f/1.8 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>70</minlength>
 		<maxlength>300</maxlength>
 		<startinglength>100</startinglength>
@@ -82,6 +96,8 @@
 
 	<lens include="true">
 		<name>80mm - 400mm f/2.8 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>80</minlength>
 		<maxlength>400</maxlength>
 		<startinglength>200</startinglength>
@@ -92,6 +108,8 @@
 
 	<lens include="true">
 		<name>400mm - 800mm f/4 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>400</minlength>
 		<maxlength>800</maxlength>
 		<startinglength>500</startinglength>
@@ -102,6 +120,8 @@
 
 	<lens include="true">
 		<name>800mm - 1200mm f/4 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>800</minlength>
 		<maxlength>1200</maxlength>
 		<startinglength>900</startinglength>
@@ -114,6 +134,8 @@
 
 	<lens include="false">
 		<name>Canon 17-40mm L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>17</minlength>
 		<maxlength>40</maxlength>
 		<startinglength>20</startinglength>
@@ -124,6 +146,8 @@
 
 	<lens include="false">
 		<name>Canon 70-200mm f/4 L</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>70</minlength>
 		<maxlength>200</maxlength>
 		<startinglength>100</startinglength>
@@ -134,6 +158,8 @@
 
 	<lens include="false">
 		<name>Canon 50mm f/1.8</name>
+		<stopsrange name="full" />
+		<stopsrange name="third" />
 		<minlength>50</minlength>
 		<maxlength>50</maxlength>
 		<startinglength>50</startinglength>
