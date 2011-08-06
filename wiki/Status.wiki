@@ -1,3 +1,9 @@
+= v0.91beta Released =
+
+This update fixes the issues of accuracy caused by using general f-stop numbers instead of the exact values based on sqrt(2). I also fixed the rounding error in the calculation code.
+
+I had a go at improving the usability of the aperture slider. It's better and now supports full, quarter, third and half stops.
+
 = v0.9beta Released =
 
 The project is in beta, and isn't currently in the Android Marketplace. I'd like to iron any bugs out before it goes there, and perhaps get some feedback on my choice of [Bodies bodies], [Lenses lenses] and [Ranges ranges].
