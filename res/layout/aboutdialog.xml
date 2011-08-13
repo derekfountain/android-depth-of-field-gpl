@@ -9,6 +9,6 @@
     <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distributed under the GPLv3. Visit:"></TextView>
     <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="http://www.derekfountain.org/software_dofc.php" android:textStyle="italic"></TextView>
     <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="for more details and a copy of the licence."></TextView>
-    <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="v0.91beta" android:textStyle="italic"></TextView>
+    <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="v0.92beta" android:textStyle="italic"></TextView>
 
 </LinearLayout>

@@ -216,7 +216,7 @@ public class MVCModel {
         // Aperture is an integer like 400 for f/4.0. So look up the precise value
         //
         mAperture = new Double(inputAperture);
-        Double exactAperture = apertureValues.get(inputAperture);
+        final double exactAperture = apertureValues.get(inputAperture);
         
         // Wikipedia says that adding the mFocalLength here is unnecessary, and in fact
         // you have to search the page for mention of its "negligible" effect. Hmmm.
@@ -229,56 +229,50 @@ public class MVCModel {
         //        
         mHyperfocalDistance = (mFocalLength * mFocalLength) / (exactAperture * mCircleOfConfusion) + mFocalLength;
         
-        // Distance is in metres, convert to mm
+        // mDistance is a Double in metres, use a double in mm for calculations
         //
-        mDistance *= 1000.0;
+        final double distanceInMM = inputSubjectDistance * 1000.0;
         
-        double hypTimesDistance = (mHyperfocalDistance * mDistance);
-        double hypPlusDistance  = (mHyperfocalDistance + mDistance);
-        double hypMinusDistance = (mHyperfocalDistance - mDistance);
-        if ( Math.abs(mDistance - mHyperfocalDistance) < 0.000001 ) {
+        final double hypTimesDistance = (mHyperfocalDistance * distanceInMM);
+        final double hypPlusDistance  = (mHyperfocalDistance + distanceInMM);
+        final double hypMinusDistance = (mHyperfocalDistance - distanceInMM);
+        if ( Math.abs(distanceInMM - mHyperfocalDistance) < 0.000001 ) {
         	
         	// Subject is at exactly hyperfocal distance
         	//
-        	mNearLimit = new Double((mHyperfocalDistance / 2));
-            mFarLimit = null;
+        	mNearLimit      = new Double((mHyperfocalDistance / 2));                  // In mm
+            mFarLimit       = null;
             mBehindDistance = null;
-            mTotal = null;
+            mTotal          = null;
         }
-        else if ( mDistance < mHyperfocalDistance ) {
+        else if ( distanceInMM < mHyperfocalDistance ) {
         	
         	// Subject is closer than hyperfocal distance
         	//
-        	mNearLimit = new Double( hypTimesDistance / hypPlusDistance );
-        	mFarLimit  = new Double( hypTimesDistance / hypMinusDistance );
-        	mBehindDistance = new Double( mFarLimit - mDistance );
-        	mTotal = new Double( mFarLimit - mNearLimit );
+        	mNearLimit      = new Double( hypTimesDistance / hypPlusDistance );       // In mm
+        	mFarLimit       = new Double( hypTimesDistance / hypMinusDistance );      // In mm
+        	mBehindDistance = new Double( (mFarLimit - distanceInMM) / 1000.0 );      // In m
+        	mTotal          = new Double( (mFarLimit - mNearLimit) / 1000.0 );        // In m
+
+        	mFrontDistance  = new Double( (distanceInMM - mNearLimit) / 1000.0 );     // In m
+        	
+        	mFarLimit       /= 1000.0;                                                // In m        
         }            
         else {
         	
         	// Subject is beyond hyperfocal distance
         	//
-        	mNearLimit = new Double( hypTimesDistance / hypPlusDistance );
-        	mFarLimit = null;
+        	mNearLimit      = new Double( hypTimesDistance / hypPlusDistance );       // In mm
+        	mFarLimit       = null;
         	mBehindDistance = null;
-        	mTotal = null;
+        	mTotal          = null;
         }
         
-        mFrontDistance = new Double( mDistance - mNearLimit );
 		
-        // Calculations complete - convert all values from mm to m, which is what the app expects
+        // Calculations complete - convert these values from mm to m, which is what the app expects
         //
         mHyperfocalDistance /= 1000.0;
-        mDistance           /= 1000.0;
         mNearLimit          /= 1000.0;
-        if ( mFarLimit != null )
-        	mFarLimit       /= 1000.0;
-        if ( mFrontDistance != null )
-        	mFrontDistance /= 1000.0;
-        if ( mBehindDistance != null )
-        	mBehindDistance /= 1000.0;
-        if ( mTotal != null )
-        	mTotal          /= 1000.0;
         
 		Log.v("Model.stateChange", String.format("Yields near limit of: %f, far limit: %f",
 				                                 mNearLimit, mFarLimit));
