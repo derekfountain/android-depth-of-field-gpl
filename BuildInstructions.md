@@ -1,0 +1,51 @@
+# How to build the project #
+
+This guide is brief. You're expected to know how to use Eclipse and its [Android development environment](http://developer.android.com/sdk/installing.html), and to have Subversive installed and working.
+
+In Eclipse, select:
+
+**File -> New -> Other...**
+
+then find:
+
+**SVN -> Project from SVN**
+
+in the dialog. Click Next, select:
+
+**Create a new repository location**
+
+and click Next again.
+
+Add a repository of:
+
+**http://android-depth-of-field-gpl.googlecode.com/svn/**
+
+with a suitable label, say **DoFC**. Click Next, then Finish.
+
+A new dialog appears asking you how you want to check out the project. Select:
+
+**Find projects in the children of the selected resource**
+
+and click Finish.
+
+At the next dialog confirm you want to:
+
+**Check out as projects in the workspace**
+
+and click Finish. Your new project will appear in the Eclipse project explorer.
+
+Right click on the project title and select **Properties**, then click **Android** and make sure **Android 1.6** is selected (which is the target the project is built for).
+
+Now click:
+
+**Project -> Clean**
+
+and clean the project, then allow it to rebuild.
+
+You should now be able to run the project as an **Android Application** and it'll launch in a new emulator (or on your phone, if suitably connected).
+
+# Setting Default Equipment #
+
+The bodies, lenses and ranges the software uses are defined in data files. Since you've gone to the trouble of building it, you might as well tune these files for your equipment (and provide me feedback if you decide anything I might find useful).
+
+See the [bodies](Bodies.md) page, the [lenses](Lenses.md) page and [ranges](Ranges.md) page for details.
